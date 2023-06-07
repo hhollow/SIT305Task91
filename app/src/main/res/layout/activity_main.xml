@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#E1DBF4">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="270dp" />
+
+    <Button
+        android:id="@+id/buttonCreateNewItem"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Create New Advert"
+        android:onClick="createNewItem"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/buttonViewList"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="View all lost &amp; found items"
+        android:onClick="viewList"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/buttonViewOnMap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="viewList"
+        android:text="View all items on a map" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0B6DD"
+    android:orientation="vertical"
+    tools:context=".ItemDetailView">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/labelType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Item"
+            android:textColor="#4527A0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/showItemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="#4527A0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Name:"
+        android:textColor="#4527A0"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="380dp"
+        android:layout_height="5dp"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/showItemName"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelPhone"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Phone:"
+        android:textColor="#4527A0"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/showItemPhone"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelDescription"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Description:"
+        android:textColor="#4527A0"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/showItemDescription"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:paddingLeft="15dp"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelDate"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Date:"
+        android:textColor="#4527A0"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/showItemDate"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelLocation"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Location:"
+        android:textColor="#4527A0"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/showItemLocation"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonBackToList"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="removeItem"
+            android:text="Back to List" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveItem"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="removeItem"
+            android:text="Remove" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+</LinearLayout>

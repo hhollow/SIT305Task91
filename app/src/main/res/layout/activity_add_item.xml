@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_Item"
+    android:background="#E1DBF4">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/labelPostType"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="Post Type" />
+
+        <RadioGroup
+            android:id="@+id/postTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_lost"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Lost"/>
+
+            <RadioButton
+                android:id="@+id/rbtn_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Found"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Name:"
+        android:textColor="#401E7E"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="380dp"
+        android:layout_height="5dp"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/input_Name"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelPhone"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Phone:"
+        android:textColor="#401E7E"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <EditText
+        android:id="@+id/input_Phone"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelDescription"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Description:"
+        android:textColor="#401E7E"
+        android:textSize="20sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <EditText
+        android:id="@+id/input_Description"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelDate"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Date:"
+        android:textColor="#401E7E"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <EditText
+        android:id="@+id/input_Date"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/labelLocation"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Location:"
+        android:textColor="#401E7E"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/input_Location"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonGetCurrentLocation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="backToHome"
+            android:text="Get Location" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonSaveNewItem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="saveNewItem"
+            android:text="Save" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="backToHome"
+            android:text="Home" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <fragment android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        />
+
+</LinearLayout>
